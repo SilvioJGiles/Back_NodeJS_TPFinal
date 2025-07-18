@@ -85,6 +85,10 @@ Enlace a la aplicación:
   
   https://back-node-js-tp-final.vercel.app/
 
+Para realizar las pruebas con la aplicación de Vercel, modificar la línea de la aplicación de Python:
+  
+  BASE_URL = "https://back-node-js-tp-final.vercel.app"
+
 
 
 
