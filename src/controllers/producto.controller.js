@@ -42,8 +42,8 @@ const creaProductoCtrl = async (req, res) => {
       precio: Number(precio),
     };
 
-    await productoService.creaProductoSrv(nuevoProducto);
-    res.status(201).json({ message: 'Producto creado con éxito!', payload: nuevoProducto });
+    const idProductoCreado = await productoService.creaProductoSrv(nuevoProducto);
+    res.status(201).json({ message: 'Producto creado con éxito!', id: idProductoCreado, payload: nuevoProducto });
   } catch (error) {
     res.status(500).json({ message: 'Error interno del servidor', error: error.message });
   }

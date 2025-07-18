@@ -37,7 +37,10 @@ export async function obtieneProductosMod() {
 
 // Crea un nuevo producto
 export async function creaProductoMod(producto) {
-  await addDoc(collProducto, producto);
+  const docRef = await addDoc(collProducto, producto);
+  
+  // Retorno el Id del Producto creado
+  return docRef.id;
 }
 
 // Actualiza un producto por su Id
