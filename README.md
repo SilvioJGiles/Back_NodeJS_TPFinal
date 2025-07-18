@@ -80,6 +80,10 @@ Se incluye un script de Python para probar la funcionalidad completa de la API, 
   python prueba_endpoints.py
   El script imprimirá en la consola el estado de cada solicitud a la API, los códigos de respuesta y los datos recibidos.
 
+El despliegue en Vercel se encuentra realizado.
+Enlace a la aplicación: 
+  
+  https://back-node-js-tp-final.vercel.app/
 
 
 
